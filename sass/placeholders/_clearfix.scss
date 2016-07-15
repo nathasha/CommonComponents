@@ -1,0 +1,14 @@
+/* Adapted from: http://nicolasgallagher.com/micro-clearfix-hack */
+/* usage: @extend %clearfix; */
+
+%clearfix {
+	&:before, &:after {
+		content: " ";
+		display: block;
+		clear: both;
+	}
+
+	&:after {
+		clear: both;
+	}
+}
